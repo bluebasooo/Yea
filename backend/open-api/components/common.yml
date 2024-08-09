@@ -1,0 +1,18 @@
+components:
+  schemas:
+  
+    WordDto:
+      type: object
+      properties:
+        word:
+          type: string
+        context:
+          type: string
+        lang:
+          type: Language
+
+    Language:
+      type: string
+      enum:
+      - ru
+      - en

@@ -1,0 +1,10 @@
+components:
+  schemas:
+  
+    WordsByDateResponse:
+      type: object
+      properties:
+        word:
+          $ref: './common.yml#/components/schemas/WordDto'
+        date:
+          type: date

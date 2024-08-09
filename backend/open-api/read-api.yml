@@ -1,0 +1,23 @@
+openapi: '3.0.3'
+info:
+  title: read-api
+  version: '1.0'
+servers:
+  - url: https://api.server.test/v1
+paths:
+  /api/v1/read/by-date:
+    get:
+      parameters:
+        - in: query
+          name: date
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: './components/read-api.yml#/components/schemas/WordsByDateResponse'
+

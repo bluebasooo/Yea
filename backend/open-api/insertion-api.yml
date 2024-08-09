@@ -1,0 +1,21 @@
+openapi: '3.0.3'
+info:
+  title: insertion-api
+  version: '1.0'
+servers:
+  - url: https://api.server.test/v1
+paths:
+  /api/v1/insert:
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: './components/insertion-api.yml#/components/schemas/WordInsertionRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+      
+            
+

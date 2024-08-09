@@ -1,0 +1,5 @@
+components:
+  schemas:
+  
+    WordInsertionRequest:
+      $ref: './common.yml#/components/schemas/WordDto'
